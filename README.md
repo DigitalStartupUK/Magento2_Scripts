@@ -43,7 +43,7 @@ The scripts are designed to stop instantly as a query exits while having a non-z
 
 ## Installation
 1. Upload to `<magento root>/bin/` (e.g. `<magento root>/bin/up_basic.sh`)
-2. Ensure that the scripts are owner by the magento user (e.g. `magento www-data') [important because of next step]
+2. Ensure that the scripts are owner by the magento user (e.g. `magento www-data`) [important because of next step]
 3. Set the appropriate permissions so only magento user can run the scripts (e.g. `chmod 744 bin/up_basic.sh`)
 4. Run the script at any time from the Magento Root Directory (e.g. bin/up_basic.sh)
 
