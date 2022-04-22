@@ -39,6 +39,15 @@ bin/magento cache:clean
 bin/magento cache:flush
 ```
 
+4. `up_adminhtml.sh` : This one clears a bunch of caches if you're only making adminhtml changes.
+
+```
+rm -rf var/view_preprocessed pub/static/adminhtml/*
+bin/magento setup:static-content:deploy --area adminhtml -f
+bin/magento cache:clean
+bin/magento cache:flush
+```
+
 The scripts are designed to stop instantly as a query exits while having a non-zero status (hence the `set -e`). I've also added some Verbose feedback for the user (`echo`).
 
 ## Installation
